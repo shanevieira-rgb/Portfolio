@@ -11,20 +11,21 @@
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/baguetteBox.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar">
-                <a href="#"><h1>Shane Vieira</h1></a>
+            <a href="../../"><h1>Shane Vieira</h1></a>
             </div>
             <div class="nav">
                 <button class="hamburger">☰</button>
                 <ul class="nav-menu">
-                    <li> <a href="#about-section">About</a> </li>
-                    <li> <a href="#portfolio-section">Work</a> </li>
-                    <li> <a href="#contact-section">Contact</a> </li>
+                    <li> <a href="../../#about-section">About</a> </li>
+                    <li> <a href="../../#portfolio-section">Work</a> </li>
+                    <li> <a href="../../#contact-section">Contact</a> </li>
                 </ul>
             </div>
 
@@ -35,8 +36,8 @@
     <main>
         <section class="about-section" id="about-section">
             <div class="about-content">
-                <h2>About Me</h2>
-                <p>Hello I am a first year transfer student at SJSU majoring in DMA</p>
+                <h2>2D Artwork</h2>
+                <p>work in progress</p>
             </div>
         </section>
         <section class="portfolio-section" id="portfolio-section">
@@ -44,57 +45,49 @@
                 <h2>My Work</h2>
                 <div class="flex-container-grid">
                     <div class="portfolio-item flex-item-grid">
-                        <a href="projects/project-templet"><img src="images/cake.png" alt="Piece of Cake">
+                        <a href="images/cake.png" data-caption="Caption for Lightbox"><img src="images/cake.png" alt="Piece of Cake"></a>
                         <h3>Piece of Cake</h3>
-                        <p>I had to draw a food from a picture in a 2D drawing program </p></a>
+                        <p>I had to draw a food from a picture in a 2D drawing program </p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="projects/project-templet"><img src="images/burger.png" alt="red burger">
+                        <a href="images/burger.png" data-caption="Caption for Lightbox"><img src="images/burger.png" alt="red burger"></a>
                         <h3>Red Meat</h3>
-                        <p>A stance on how unhealthy fast food is for you. Done in a 2D drawing program</p></a>
+                        <p>A stance on how unhealthy fast food is for you. Done in a 2D drawing program</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="projects/project-templet"><img src="images/salvador_dali.png" alt="Portrate of Salvador Dali">
+                        <a href="images/salvador_dali.png" data-caption="Caption for Lightbox"><img src="images/salvador_dali.png" alt="Portrate of Salvador Dali"></a>
                         <h3>Portrate of Salvador Dali</h3>
                         <p> I was tasked to recreate a portrate of an artist that I admire. I choses to recreate the
-                            famous Salvador Dali portrate in a 2D drawing program</p></a>
+                            famous Salvador Dali portrate in a 2D drawing program</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="projects/project-templet"><img src="images/softrain.png" alt="surrealist art piece of clouds crying">
+                        <img src="images/softrain.png" alt="surrealist art piece of clouds crying">
                         <h3>Soft Rain</h3>
-                        <p>Surrealist art piece done in photo shop</p></a>
+                        <p>Surrealist art piece done in photo shop</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="projects/project-templet"><img src="images/dyinglight.jpg" alt="Piece of Cake">
+                        <img src="images/dyinglight.jpg" alt="Piece of Cake">
                         <h3>Dying Light</h3>
-                        <p>I wanted to play around with lighting in a 2D drawing program </p></a>
+                        <p>I wanted to play around with lighting in a 2D drawing program </p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="projects/project-templet"><img src="images/burger.png" alt="red burger">
+                        <img src="images/burger.png" alt="red burger">
                         <h3>Red Meat</h3>
-                        <p>A stance on how unhealthy fast food is for you. Done in a 2D drawing program</p></a>
+                        <p>A stance on how unhealthy fast food is for you. Done in a 2D drawing program</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="projects/project-templet"><img src="images/salvador_dali.png" alt="Portrate of Salvador Dali">
+                        <img src="images/salvador_dali.png" alt="Portrate of Salvador Dali">
                         <h3>Portrate of Salvador Dali</h3>
                         <p> I was tasked to recreate a portrate of an artist that I admire. I choses to recreate the
-                            famous Salvador Dali portrate in a 2D drawing program</p></a>
+                            famous Salvador Dali portrate in a 2D drawing program</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="projects/project-templet"><img src="images/softrain.png" alt="surrealist art piece of clouds crying">
+                        <img src="images/softrain.png" alt="surrealist art piece of clouds crying">
                         <h3>Soft Rain</h3>
-                        <p>Surrealist art piece done in photo shop</p></a>
+                        <p>Surrealist art piece done in photo shop</p>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="contact-section" id="contact-section">
-            <div class="contact-content">
-                <h2>Contact Me</h2>
-                <p>Email: Shane.vieira05@gmail.com</p>
-            </div>
-
         </section>
     </main>
     <footer class="flex-container">
@@ -107,7 +100,13 @@
 
     </footer>
 
-    <script src="js/hamburger.js"></script>
+    <script src="js/hamburger.js"></script>\
+    <script src="js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run(".flex-container-grid",{
+            captions: true
+        })
+    </script>
 </body>
 
 </html>
