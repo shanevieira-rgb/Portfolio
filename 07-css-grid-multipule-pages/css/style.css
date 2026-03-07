@@ -1,0 +1,248 @@
+/*---------------------------------------color palette */
+
+:root {
+    --bgcolor-1: #fff;
+    --bgcolor-2: gray;
+    --bgcolor-3: #e6e6e5;
+    --fcolor: #111;
+    --ac-1: #2a7b9b;
+    --ac-2: #edea53;
+    --ac-3: #57c785;
+    --dcolor: #1A1D1A;
+}
+
+
+
+
+/*---------------------------------------CSS resets */
+
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* make images responive */
+img {
+    display: block;
+    max-width: 100%;
+
+}
+
+
+/*---------------------------------------Respecting useres font size preferences */
+html {
+    font-size: 100%;
+}
+
+/*---------------------------------------General CSS */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bgcolor-1);
+    color: var(--fcolor);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-align: justify; */
+}
+
+header {
+    padding: 5rem 2rem;
+    margin-bottom: 7rem;
+}
+
+header h1 {
+    text-shadow: -5px 5px 0px #edea53cc, -10px 10px 0px #edea5399, -15px 15px 0px #edea5344;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--fcolor);
+    /* margin: 0 1rem; */
+    transition: all .5s ease;
+}
+
+nav a:hover {
+    color: var(--ac-2);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+    display: none;
+    background: none;
+    border: none;
+    color: var(--fcolor);
+    font-size: 3rem;
+
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+}
+
+@media (max-width: 690px)  {
+.navbar{
+    align-items: flex-start;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger{
+    display: block;
+}
+.nav-menu{
+    display: none;
+}
+
+.nav-menu.active{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fcolor);
+    padding: 1rem;
+    border-radius: 1rem;
+    
+
+}
+
+.nav-menu a{
+color: var(--bgcolor-1);
+}
+
+header{
+    padding: 1rem 2rem;
+}
+
+}
+
+main{
+    margin: 0%;
+}
+
+@media (max-width: 975px)  {
+    main {margin: 2rem;
+    }
+}
+
+@media (max-width: 700px)  {
+    main {margin: 1rem;
+    }
+}
+
+.about-content,
+.portfolio-content,
+.contact-content,
+.project-content {
+    max-width: 60rem;
+    margin: 5rem auto;
+}
+
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2,
+.project-content h2 {
+    margin: 2rem 0;
+}
+
+/* contenct for project pages */
+
+.portfolio-content img{
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+.project-content p{
+    padding: 2rem;
+}
+
+
+.portfolio-item{
+    padding: 1rem;
+    background-color: var(--fcolor);
+    color: var(--bgcolor-1);
+    border-radius: .3rem;
+}
+
+.portfolio-item a{
+    text-decoration: none;
+    color: var(--bgcolor-1);
+
+}
+
+.portfolio-item p{
+    font-size: 1rem;
+
+}
+
+.portfolio-item h3{
+    font-size: 1.3rem;
+
+}
+
+.portfolio-item img{
+    border-radius: .3rem;
+}
+
+
+footer {
+    padding: 1rem 2rem;
+}
+
+footer img {
+    display: inline;
+    max-width: 3rem;
+    margin: 0 .5rem;
+}
+
+@media (max-width: 486px)  {
+    footer p{
+        font-size: 1.2rem;
+    }
+
+    footer img{
+        max-width: 1.5rem;
+        margin: 0 .2rem;
+    }
+}
+
+
+/* ----------------------------------flex styling */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-item-grid{
+    flex: 1 0 19rem;
+}
