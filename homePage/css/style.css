@@ -4,6 +4,7 @@
     --bgcolor-1: #fff;
     --bgcolor-2: gray;
     --bgcolor-3: #e6e6e5;
+    --bgcolor-4: #FFFFF0;
     --fcolor: #111;
     --ac-1: #2a7b9b;
     --ac-2: #edea53;
@@ -50,7 +51,7 @@ html{
 }
 
 body {
-    background-color: var(--bgcolor-1);
+    background-color: var(--bgcolor-4);
     color: var(--fcolor);
     font-size: 1.5rem;
     line-height: 1.5;
@@ -59,17 +60,18 @@ body {
 }
 
 header {
+    background-color: var(--dcolor);
     padding: 5rem 2rem;
     margin-bottom: 7rem;
 }
 
 header h1 {
-    text-shadow: -5px 5px 0px #edea53cc, -10px 10px 0px #edea5399, -15px 15px 0px #edea5344;
+    text-shadow:  -10px 7px 0px #ffffff5d, -15px 13px 0px #ffffff29;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--fcolor);
+    color: var(--bgcolor-1);
     /* margin: 0 1rem; */
     transition: all .5s ease;
 }
@@ -88,7 +90,7 @@ nav a:hover {
     display: none;
     background: none;
     border: none;
-    color: var(--fcolor);
+    color: var(--bgcolor-1);
     font-size: 3rem;
 
 }
@@ -156,6 +158,7 @@ main{
 .project-content {
     max-width: 60rem;
     margin: 5rem auto;
+    text-align: center;
 }
 
 .about-content h2,
@@ -174,7 +177,12 @@ main{
 }
 
 .project-content p{
+    margin: auto;
     padding: 2rem;
+}
+
+.project-content img{
+     margin: auto;
 }
 
 
@@ -182,7 +190,7 @@ main{
     padding: 1rem;
     background-color: var(--fcolor);
     color: var(--bgcolor-1);
-    border-radius: .3rem;
+    border-radius: 1.0rem;
 }
 
 .portfolio-item a{
@@ -207,6 +215,8 @@ main{
 
 
 footer {
+    background-color: var(--dcolor);
+    color: var(--bgcolor-1);
     padding: 1rem 2rem;
 }
 
@@ -218,6 +228,7 @@ footer img {
 
 @media (max-width: 486px)  {
     footer p{
+        
         font-size: 1.2rem;
     }
 
@@ -238,11 +249,11 @@ footer img {
 .flex-container-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: stretch;
 }
 
 .flex-item-grid{
-    flex: 1 0 19rem;
+    flex: 0 0 19rem;
 }
