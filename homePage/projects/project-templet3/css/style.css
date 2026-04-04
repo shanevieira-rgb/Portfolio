@@ -90,8 +90,9 @@ nav a:hover {
     display: none;
     background: none;
     border: none;
-    color: var(--fcolor);
+    color: var(--bgcolor-1);
     font-size: 3rem;
+    margin-left: auto;
 
 }
 
@@ -101,14 +102,15 @@ nav a:hover {
     gap: .5rem;
 }
 
-@media (max-width: 690px)  {
+@media (max-width: 1920px)  {
 .navbar{
     align-items: flex-start;
 }
 
 nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
 }
 
 .hamburger{
@@ -133,7 +135,7 @@ color: var(--bgcolor-1);
 }
 
 header{
-    padding: 1rem 2rem;
+    padding: 5rem 2rem;
 }
 
 }

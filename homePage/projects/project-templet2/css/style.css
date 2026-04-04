@@ -156,23 +156,49 @@ main{
 
 .about-content,
 .portfolio-content,
-.contact-content {
+.contact-content,
+.project-content {
     max-width: 60rem;
     margin: 5rem auto;
+    text-align: center;
 }
 
 .about-content h2,
 .portfolio-content h2,
-.contact-content h2 {
+.contact-content h2,
+.project-content h2 {
     margin: 2rem 0;
 }
+
+/* contenct for project pages */
+
+.portfolio-content img{
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+.project-content p{
+    margin: auto;
+    padding: 2rem;
+}
+
+.project-content img{
+     margin: auto;
+}
+
 
 .portfolio-item{
     padding: 1rem;
     background-color: var(--fcolor);
     color: var(--bgcolor-1);
-    text-align: center;
-    border-radius: .3rem;
+    border-radius: 1.0rem;
+}
+
+.portfolio-item a{
+    text-decoration: none;
+    color: var(--bgcolor-1);
+
 }
 
 .portfolio-item p{
@@ -186,7 +212,6 @@ main{
 }
 
 .portfolio-item img{
-    margin: auto;
     border-radius: .3rem;
 }
 
@@ -205,6 +230,7 @@ footer img {
 
 @media (max-width: 486px)  {
     footer p{
+        
         font-size: 1.2rem;
     }
 
@@ -225,11 +251,11 @@ footer img {
 .flex-container-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: stretch;
 }
 
 .flex-item-grid{
-    flex: 1 0 19rem;
+    flex: 0 0 19rem;
 }
